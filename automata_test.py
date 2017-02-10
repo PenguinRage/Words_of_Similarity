@@ -3,7 +3,7 @@ import automata
 import bisect
 import random
 
-words = [x.strip().lower() for x in open('/usr/share/dict/cracklib-small')]
+words = [x.strip().lower() for x in open('sowpods.txt')]
 words.sort()
 words10 = [x for x in words if random.random() <= 0.1]
 words100 = [x for x in words if random.random() <= 0.01]
@@ -12,8 +12,8 @@ words100 = [x for x in words if random.random() <= 0.01]
 class FoodCase(unittest.TestCase):
     def test_food(self):
         m = Matcher(words)
-        self.assertEqual(len((list(automata.find_all_matches('food', 1, m)))), 13)
-        self.assertEqual(len((list(automata.find_all_matches('food', 2, m)))), 172)
+        self.assertEqual(len((list(automata.find_all_matches('food', 1, m)))), 18)
+        self.assertEqual(len((list(automata.find_all_matches('food', 2, m)))), 318)
 
 
 class Matcher(object):
