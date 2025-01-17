@@ -1,1 +1,1 @@
-# Levenshtein_automata [![Build Status](https://travis-ci.org/PenguinRage/Words_of_Similarity.svg?branch=master)](https://travis-ci.org/PenguinRage/Words_of_Similarity)
+# Levenshtein_automata [![Python application](https://github.com/PenguinRage/Words_of_Similarity/actions/workflows/python-app.yml/badge.svg)](https://github.com/PenguinRage/Words_of_Similarity/actions/workflows/python-app.yml)
